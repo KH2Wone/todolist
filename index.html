@@ -11,6 +11,7 @@
         text-align: center;
         width: 80%;
         margin: 0 auto;
+        background-color: cornflowerblue;
     }
     h1 {
         font-size: 50px;
@@ -47,7 +48,24 @@
         box-shadow: 1px 1px 1px 1px #ccc;
     }
 
-    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .bgImage {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: fadeIn .8s linear;
+    }
 
 
 </style>
@@ -69,5 +87,6 @@
     <script src="./gretting.js"></script>
     <script src="./todo.js"></script>
     <script src="./bg.js"></script>
+    <script src="./weather.js"></script>
 </body>
 </html>
