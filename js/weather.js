@@ -20,7 +20,7 @@ async function getWeather(lat, lng) {
     const post = await postResponse.json();
     const temperature = post.main.temp;
     const place = post.name;
-    weather.innerText = `${temperature} @ ${place}`;
+    weather.innerText = `여기는 ${place}, ${temperature}도의 날씨네요 🌈`;
 }
 
 function saveCoords(coordsObj) {
@@ -46,15 +46,28 @@ function askForCoords() {
     navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
 }
 
+// function loadCoords() {
+//     const loadedCoords = localStorage.getItem(COORDS);
+//     if (loadedCoords === null) {
+//         askForCoords();
+//     } else {
+//         //getWeather
+//         const parseCoords = JSON.parse(loadedCoords);
+//         getWeather(parseCoords.latitude, parseCoords.longitude);
+//     }
+// }
+
 function loadCoords() {
     const loadedCoords = localStorage.getItem(COORDS);
-    if (loadedCoords === null) {
-        askForCoords();
-    } else {
+    if (loadedCoords !== null) {
         //getWeather
         const parseCoords = JSON.parse(loadedCoords);
         getWeather(parseCoords.latitude, parseCoords.longitude);
     }
+}
+
+function locationAsk() { // 이름을 입력하고 나서 날씨를 물어보도록 하기
+    askForCoords();
 }
 
 function init() {
@@ -62,5 +75,3 @@ function init() {
 }
 
 init();
-
-/* 마지막강의 9:46 */
