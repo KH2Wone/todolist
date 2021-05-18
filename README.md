@@ -2,7 +2,7 @@
 by kang heewon<br>
 ✅ [노마드코더의 바닐라 JS로 크롬 앱 만들기](https://nomadcoders.co/javascript-for-beginners)를 공부하면서 추가로 응용해서 만들었어요!<br><br>
 > 누구나 손쉽게 이용할 수 있는 TODO-LIST ! 💨<br>
-<img src="./img/todoit_img.jpg" width="1000px" height="562.5px">
+<img src="./img/todoit_img.jpg">
 
 ---
 <br>
