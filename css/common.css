@@ -11,9 +11,13 @@ body, html {
     font-family: "SF Pro Text", sans-serif;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    font-size: 62.5%;
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
 display: none; /* Chrome, Safari, Opera*/
 }
+
+address,
+i {font-style: normal;}
