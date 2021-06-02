@@ -1,46 +1,49 @@
 @import url('./common.css');
 
+/* || A child of a body */
 #container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #fff;
 }
 
 /* || header */
 header {
     width: 100%;
-    height: 50px;
-    /* background: rgba(255,255,255,.4); */
-    padding: 0px 2vw;
-    box-sizing: border-box;
+    height: 58px;
 }
 
 header h1 {
-    font-size: 1rem;
-    letter-spacing: 1vw;
-    line-height: 50px;
+    font-size: 3.5rem;
+    letter-spacing: 0.66em;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 16px;
+    height: auto;
+    box-sizing: border-box;
 }
 
 /* || main */
 main {
-    width: 90%;
-    height: calc(100% - 100px);
+    width: calc(100% - 40px);
+    height: calc(100% - 112px);
     margin: 0 auto;
 }
 
 /* clock */
 .js-clock {
-    font-size: 5rem;
-    text-align: center;
+    font-size: 10.5rem;
+    font-weight: 900;
+    padding: 199px 0px 35px;
+    box-sizing: border-box;
 }
 
 /* weather */
 .js-weather {
     text-align: center;
     display: block;
+    font-size: 4rem;
 }
-
-
 
 button {
     border: none;
@@ -55,37 +58,51 @@ button {
 
 .showing {
     display: block;
+    font-size: 4rem;
+}
+
+.form input {
+    font-size: 4rem;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 12px 0px;
+    color: #333;
+    font-weight: 200;
+    display: block;
+    width: 590px;
+    box-sizing: border-box;
+}
+
+.form input::-webkit-input-placeholder {
+    color: #333;
+    letter-spacing: -0em;
+}
+.form input::-moz-placeholder {
+    color: #333;
+
+}
+.form input::-ms-placeholder {
+    color: #333;
+
 }
 
 .js-toDoForm input {
-    width: 50%;
     background-color: transparent;
-    height: 50px;
     border: none;
-    box-shadow: 1px 1px 1px 1px #ccc;
 }
-
-/* @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.bgImage {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    animation: fadeIn .8s linear;
-} */
 
 /* || footer */
 footer {
-    height: 50px;
     width: 100%;
+    padding-bottom: 22px;
+    box-sizing: border-box;
+    height: 54px;
+}
+
+footer address {
+    font-size: 2.7rem;
+    letter-spacing: 0.64em;
+    word-break: break-all;
+    white-space: nowrap;
+    font-weight: 100;
 }
