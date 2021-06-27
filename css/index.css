@@ -77,10 +77,12 @@ button {
     color: #333;
     letter-spacing: -0em;
 }
+
 .form input::-moz-placeholder {
     color: #333;
 
 }
+
 .form input::-ms-placeholder {
     color: #333;
 
@@ -94,15 +96,50 @@ button {
 /* || footer */
 footer {
     width: 100%;
+    height: 54px;
     padding-bottom: 22px;
     box-sizing: border-box;
-    height: 54px;
+    overflow: hidden;
+    position: relative;
 }
 
 footer address {
     font-size: 2.7rem;
     letter-spacing: 0.64em;
-    word-break: break-all;
-    white-space: nowrap;
     font-weight: 100;
+    display: block;
+    width: 200%;
+    position: absolute;
+    white-space: nowrap;
+    word-break: break-all;
+    animation: marquee 20s linear infinite;
+}
+
+footer address:hover {
+    animation-play-state: paused;
+}
+
+address ul {
+    display: inline-block;
+}
+
+address ul li {
+    height: 100%;
+    display: inline-block;
+    transition: all .2s ease-out;
+    /* width: 500px; */
+}
+
+address ul li::after {
+    content: ' |';
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
 }
