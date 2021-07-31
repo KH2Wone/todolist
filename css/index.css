@@ -40,7 +40,6 @@ main {
 
 /* weather */
 .js-weather {
-    text-align: center;
     display: block;
     font-size: 4rem;
 }
@@ -59,6 +58,7 @@ button {
 .showing {
     display: block;
     font-size: 4rem;
+    font-weight: initial;
 }
 
 .form input {
@@ -67,7 +67,7 @@ button {
     border-bottom: 1px solid #333;
     padding: 12px 0px;
     color: #333;
-    font-weight: 200;
+    font-weight: 100;
     display: block;
     width: 590px;
     box-sizing: border-box;
@@ -91,6 +91,12 @@ button {
 .js-toDoForm input {
     background-color: transparent;
     border: none;
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.js-toDoForm input::placeholder {
+    color: #333;
 }
 
 /* || footer */
