@@ -98,12 +98,13 @@ main {
 .js-weather {
     display: block;
     font-size: 4rem;
+    font-weight: 200;
 }
 
-button {
+.del_btn {
     border: none;
     background: transparent;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .form,
@@ -114,7 +115,7 @@ button {
 .showing {
     display: block;
     font-size: 4rem;
-    font-weight: initial;
+    font-weight: 200;
 }
 
 .form input {
@@ -161,6 +162,14 @@ button {
 
 .js-toDoForm input::placeholder {
     color: #333;
+}
+
+.x_btn {
+    content: '';
+    display: block;
+    background: url(../img/btn_x.svg);
+    width: 18px;
+    height: 18px;
 }
 
 .privacy_info {
