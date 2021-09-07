@@ -143,21 +143,21 @@ main {
 
 .form input::-ms-placeholder {
     color: #333;
-
 }
 
 .js-toDoForm {
-    width: 602px;
+    width: 607px;
+    border-bottom: 1px solid #333333;
 }
 
 .js-toDoForm input {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #333333;
     font-size: 2.4rem;
     color: #333;
-    width: 100%;
+    width: calc(100% - 21px);
     padding: 35px 0px 17px;
+    display: inline-block;
 }
 
 .js-toDoForm input::placeholder {
@@ -165,11 +165,13 @@ main {
 }
 
 .x_btn {
-    content: '';
-    display: block;
+    display: inline-block;
     background: url(../img/btn_x.svg);
     width: 18px;
     height: 18px;
+    vertical-align: bottom;
+    margin-bottom: 17px;
+    cursor: pointer;
 }
 
 .privacy_info {
