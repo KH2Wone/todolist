@@ -5,8 +5,14 @@ const toDoForm = document.querySelector('.js-toDoForm'),
 const TODOS_LS = 'toDos';
 
 let toDos = [];
-
 let idNumbers = 1;
+
+// 텍스트 지우기 x 버튼
+let xBtn = document.querySelector('.x_btn');
+xBtn.addEventListener('click', function () {
+    toDoInput.value = '';
+})
+
 
 function deleteToDo(event) {
     const btn = event.target;
