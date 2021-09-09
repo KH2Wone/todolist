@@ -105,6 +105,9 @@ main {
     border: none;
     background: transparent;
     font-size: 2rem;
+    background: url(../img/btn_x.svg);
+    width: 18px;
+    height: 18px;
 }
 
 .form,
