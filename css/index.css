@@ -88,6 +88,7 @@ main {
     margin: 0 auto;
     position: relative;
     top: 58px;
+    box-sizing: border-box;
 }
 
 /* clock */
@@ -103,15 +104,6 @@ main {
     display: block;
     font-size: 4rem;
     font-weight: 200;
-}
-
-.del_btn {
-    border: none;
-    background: transparent;
-    font-size: 2rem;
-    background: url(../img/btn_x.svg);
-    width: 18px;
-    height: 18px;
 }
 
 .form,
@@ -187,6 +179,27 @@ main {
     letter-spacing: -0.09em;
     color: #858585;
     padding-top: 17px;
+}
+
+/* || toDoList */
+.js-toDoList {
+    padding-top: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.js-toDoList li span {
+    font-size: 2.4rem;
+    padding-right: 13px;
+}
+
+.del_btn {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    background: url(../img/btn_x.svg);
+    width: 18px;
+    height: 18px;
 }
 
 /* || footer */
