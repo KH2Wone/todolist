@@ -189,17 +189,17 @@ main {
 }
 
 .js-toDoList li span {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     padding-right: 13px;
 }
 
 .del_btn {
     border: none;
-    background: transparent;
-    font-size: 2rem;
-    background: url(../img/btn_x.svg);
+    background: url(../img/icon_recycleBin.svg);
     width: 18px;
-    height: 18px;
+    height: 24.6px;
+    cursor: pointer;
+    vertical-align: sub;
 }
 
 /* || footer */
