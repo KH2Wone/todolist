@@ -36,21 +36,21 @@
 .bg_icons li:nth-child(1) {
     width: 777.18px;
     height: 595.36px;
-    left: 465px;
-    top: -240px;
+    left: 39px;
+    top: -337px;
 }
 
 .bg_icons li:nth-child(2) {
     width: 1052.5px;
     height: 764.96px;
-    left: 70.3645%;
-    top: 82px;
+    left: 1354px;
+    top: 85px;
 }
 
 .bg_icons li:nth-child(3) {
     width: 482.15px;
     height: 507.24px;
-    left: -300.96px;
+    left: -228.96px;
     top: 593.49px;
     transform: rotate(-61.38deg);
 }
