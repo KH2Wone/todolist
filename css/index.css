@@ -43,7 +43,7 @@
 .bg_icons li:nth-child(2) {
     width: 1052.5px;
     height: 764.96px;
-    left: 1354px;
+    left: 65.894%;
     top: 85px;
 }
 
@@ -83,19 +83,20 @@ header h1 {
 
 /* || main */
 main {
-    width: calc(100% - 40px);
+    max-width: 100%;
     height: calc(100% - 112px);
     margin: 0 auto;
     position: relative;
     top: 58px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 /* clock */
 .js-clock {
     font-size: 10.5rem;
     font-weight: 900;
-    padding: 199px 0px 35px;
+    padding: 9.0492% 0px 35px;
     box-sizing: border-box;
 }
 
@@ -128,6 +129,8 @@ main {
     width: 590px;
     box-sizing: border-box;
     background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .form input::-webkit-input-placeholder {
@@ -145,8 +148,9 @@ main {
 }
 
 .js-toDoForm {
-    width: 607px;
+    width: 55.667%;
     border-bottom: 1px solid #333333;
+    margin: 0 auto;
 }
 
 .js-toDoForm input {
@@ -183,9 +187,11 @@ main {
 
 /* || toDoList */
 .js-toDoList {
-    padding-top: 20px;
-    width: 50%;
+    padding-top: 35px;
     box-sizing: border-box;
+    width: 55.667%;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .js-toDoList li span {
