@@ -208,6 +208,27 @@ main {
     vertical-align: sub;
 }
 
+/* || recycleBin controller btn(fixed) */
+.recycleBin_btn {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.17);
+    position: fixed;
+    bottom: 77px;
+    right: 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recycleBin_btn img {
+    width: 23px;
+    height: 31.43px;
+}
+
 /* || footer */
 footer {
     width: 100%;
