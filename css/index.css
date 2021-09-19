@@ -187,11 +187,16 @@ main {
 
 /* || toDoList */
 .js-toDoList {
-    padding-top: 35px;
     box-sizing: border-box;
     width: 55.667%;
+    height: 38%;
     text-align: left;
-    margin: 0 auto;
+    margin: 35px auto 0;
+    overflow-y: scroll;
+}
+
+.js-toDoList li {
+    margin-bottom: 20px;
 }
 
 .js-toDoList li span {
@@ -201,11 +206,12 @@ main {
 
 .del_btn {
     border: none;
-    background: url(../img/icon_recycleBin.svg);
+    background: url(../img/icon_recycleBin_close.svg);
     width: 18px;
     height: 24.6px;
     cursor: pointer;
     vertical-align: sub;
+    visibility: hidden;
 }
 
 /* || recycleBin controller btn(fixed) */
@@ -222,6 +228,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .recycleBin_btn img {
