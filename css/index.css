@@ -214,21 +214,29 @@ main {
     visibility: hidden;
 }
 
-/* || recycleBin controller btn(fixed) */
-.recycleBin_btn {
-    width: 70px;
-    height: 70px;
+/* || darkMode controller btn(fixed) */
+.darkMode_btn, .recycleBin_btn {
+    width: 60px;
+    height: 60px;
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.17);
     position: fixed;
-    bottom: 77px;
-    right: 30px;
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    bottom: 77px;
+}
+
+.darkMode_btn {
+    left: 25px;
+}
+
+/* || recycleBin controller btn(fixed) */
+.recycleBin_btn {
+    right: 25px;
 }
 
 .recycleBin_btn img {
