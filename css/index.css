@@ -207,10 +207,10 @@ main {
 .del_btn {
     border: none;
     background: url(../img/icon_recycleBin_close.svg);
-    width: 18px;
-    height: 24.6px;
+    width: 23px;
+    height: 31.43px;
     cursor: pointer;
-    vertical-align: sub;
+    vertical-align: top;
     visibility: hidden;
 }
 
@@ -293,5 +293,18 @@ address ul li::after {
 
     100% {
         left: -100%;
+    }
+}
+
+/* || media query */
+@media (max-height: 1070px) {
+    .js-toDoList {
+        height: 25%;
+    }
+}
+
+@media (max-height: 890px) {
+    .js-toDoList {
+        height: 20%;
     }
 }
