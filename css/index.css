@@ -217,7 +217,7 @@ main {
 .darkMode_btn, .recycleBin_btn {
     width: 60px;
     height: 60px;
-    background-color: #fff;
+    background-color: rgb(255,255,255);
     border-radius: 50%;
     box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.17);
     position: fixed;
@@ -285,6 +285,12 @@ address ul li::after {
     content: ' |';
 }
 
+/* || dark mode */
+body.dark .darkMode_btn {
+    background-color: rgb(0,0,0);
+}
+
+
 @keyframes marquee {
     0% {
         left: 0;
@@ -305,5 +311,20 @@ address ul li::after {
 @media (max-height: 890px) {
     .js-toDoList {
         height: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        display: none;
+    }
+
+    .js-clock {
+        font-size: 9rem;
+    }
+
+    .showing,
+    .js-weather {
+        font-size: 3rem;
     }
 }
