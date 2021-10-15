@@ -286,10 +286,19 @@ address ul li::after {
 }
 
 /* || dark mode */
-body.dark .darkMode_btn {
-    background-color: rgb(0,0,0);
+body.dark .darkMode_btn,
+body.dark #container,
+body.dark .recycleBin_btn {
+    background-color: #000;
 }
 
+body.dark main,
+body.dark header,
+body.dark footer,
+body.dark .js-toDoForm input::placeholder,
+body.dark .js-toDoForm input {
+    color: #fff;
+}
 
 @keyframes marquee {
     0% {
