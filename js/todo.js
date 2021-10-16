@@ -41,6 +41,20 @@ function paintToDo(text) {
 
     delBtn.addEventListener('click', deleteToDo);
 
+    // all delete todo list
+    let allDel = document.querySelector('.recycleBin_btn');
+    allDel.addEventListener('click', function () {
+        if(window.confirm('모두 삭제하시겠습니까?')) {
+            toDoList.removeChild(li);
+            let cleanToDosAll = toDos.filter(function(toDo) {
+                return toDo.id !== parseInt(li.id);
+            });
+            toDos = cleanToDosAll;
+            saveToDos();
+        }
+        else {location.reload();}
+    });
+
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
