@@ -121,12 +121,11 @@ main {
 .form input {
     font-size: 4rem;
     border: none;
-    border-bottom: 1px solid #333;
     padding: 12px 0px;
     color: #333;
     font-weight: 100;
     display: block;
-    width: 590px;
+    width: 100%;
     box-sizing: border-box;
     background-color: transparent;
     margin: 0 auto;
@@ -147,6 +146,7 @@ main {
     color: #333;
 }
 
+.form,
 .js-toDoForm {
     width: 55.667%;
     border-bottom: 1px solid #333333;
@@ -217,7 +217,6 @@ main {
 .darkMode_btn, .recycleBin_btn {
     width: 60px;
     height: 60px;
-    background-color: rgb(255,255,255);
     border-radius: 50%;
     box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.17);
     position: fixed;
@@ -231,16 +230,28 @@ main {
 
 .darkMode_btn {
     left: 25px;
+    background-color: #000;
+    transition: all .4s;
+}
+
+.darkMode_btn > i {
+    background: url(../img/icon_darkMode.svg) no-repeat center center;
+    display: block;
+    width: 28px;
+    height: 41px;
 }
 
 /* || recycleBin controller btn(fixed) */
 .recycleBin_btn {
     right: 25px;
+    background-color: #fff;
 }
 
-.recycleBin_btn img {
+.recycleBin_btn > i {
+    display: block;
     width: 23px;
     height: 31.43px;
+    background: url(../img/icon_recycleBin_close.svg) no-repeat center center;
 }
 
 /* || footer */
@@ -286,18 +297,36 @@ address ul li::after {
 }
 
 /* || dark mode */
-body.dark .darkMode_btn,
-body.dark #container,
-body.dark .recycleBin_btn {
+body.dark .darkMode_btn {
+    background-color: #fff;
+}
+
+body.dark #container {
     background-color: #000;
 }
 
 body.dark main,
 body.dark header,
 body.dark footer,
+body.dark .form input::placeholder,
+body.dark .form input,
+body.dark .privacy_info,
 body.dark .js-toDoForm input::placeholder,
 body.dark .js-toDoForm input {
     color: #fff;
+}
+
+body.dark .form,
+body.dark .js-toDoForm {
+    border-bottom: 1px solid #fff;
+}
+
+body.dark .x_btn {
+    background: url(../img/darkBtn_x.svg);
+}
+
+body.dark .del_btn {
+    background: url(../img/darkIcon_recycleBin_close.svg);
 }
 
 @keyframes marquee {
