@@ -1,4 +1,5 @@
-@import url('./common.css');
+@import url('./reset.css');
+@import url('mediaQuery.css');
 
 /* || A child of a body */
 #container {
@@ -336,33 +337,5 @@ body.dark .del_btn {
 
     100% {
         left: -100%;
-    }
-}
-
-/* || media query */
-@media (max-height: 1070px) {
-    .js-toDoList {
-        height: 25%;
-    }
-}
-
-@media (max-height: 890px) {
-    .js-toDoList {
-        height: 20%;
-    }
-}
-
-@media (max-width: 1024px) {
-    header {
-        display: none;
-    }
-
-    .js-clock {
-        font-size: 9rem;
-    }
-
-    .showing,
-    .js-weather {
-        font-size: 3rem;
     }
 }
