@@ -25,6 +25,21 @@ function deleteToDo(event) {
     saveToDos();
 }
 
+// all delete todo list
+(function() {
+    const allDel = document.querySelector('.recycleBin_btn');
+    allDel.addEventListener('click', function () {
+        if(window.confirm('모두 삭제하시겠습니까?')) {
+            let liAll = toDoList.querySelectorAll('li');
+            toDoList.remove(liAll);
+            toDos = [];
+            saveToDos();
+        }
+        else {location.reload();}
+    })
+})();
+
+
 function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
     // JSON.stringify() => object를 string으로 바꿔준다
@@ -40,20 +55,6 @@ function paintToDo(text) {
     delBtn.classList.add('del_btn');
 
     delBtn.addEventListener('click', deleteToDo);
-
-    // all delete todo list
-    let allDel = document.querySelector('.recycleBin_btn');
-    allDel.addEventListener('click', function () {
-        if(window.confirm('모두 삭제하시겠습니까?')) {
-            toDoList.removeChild(li);
-            let cleanToDosAll = toDos.filter(function(toDo) {
-                return toDo.id !== parseInt(li.id);
-            });
-            toDos = cleanToDosAll;
-            saveToDos();
-        }
-        else {location.reload();}
-    });
 
     span.innerText = text;
     li.appendChild(span);
