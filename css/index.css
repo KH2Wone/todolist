@@ -91,13 +91,14 @@ main {
     top: 58px;
     box-sizing: border-box;
     text-align: center;
+    overflow-y: hidden;
 }
 
 /* clock */
 .js-clock {
     font-size: 10.5rem;
     font-weight: 900;
-    padding: 9.0492% 0px 35px;
+    padding: 9.0492vh 0px 35px;
     box-sizing: border-box;
 }
 
@@ -202,7 +203,12 @@ main {
 
 .js-toDoList li span {
     font-size: 2.2rem;
-    padding-right: 13px;
+    margin-right: 13px;
+    width: calc(100% - 36px);
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .del_btn {
