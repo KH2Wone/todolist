@@ -30,12 +30,13 @@ function deleteToDo(event) {
     const allDel = document.querySelector('.recycleBin_btn');
     allDel.addEventListener('click', function () {
         if(window.confirm('모두 삭제하시겠습니까?')) {
-            let liAll = toDoList.querySelectorAll('li');
+            let liAll = toDoList.childNodes;
             toDoList.remove(liAll);
             toDos = [];
             saveToDos();
+            location.reload();
         }
-        else {location.reload();}
+        else {}
     })
 })();
 
