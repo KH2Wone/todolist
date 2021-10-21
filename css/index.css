@@ -1,5 +1,4 @@
 @import url('./reset.css');
-@import url('mediaQuery.css');
 
 /* || A child of a body */
 #container {
@@ -191,7 +190,7 @@ main {
 .js-toDoList {
     box-sizing: border-box;
     width: 55.667%;
-    height: 38%;
+    height: calc(38% - 38px);
     text-align: left;
     margin: 35px auto 0;
     overflow-y: scroll;
@@ -343,5 +342,55 @@ body.dark .del_btn {
 
     100% {
         left: -100%;
+    }
+}
+
+
+/* || media query */
+/* width */
+@media screen and (max-width: 1199px) {
+    main {
+        top: 0px;
+        height: calc(100% - 53px);
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        display: none;
+    }
+
+    .js-clock {
+        font-size: 9rem;
+    }
+
+    .showing,
+    .js-weather {
+        font-size: 3rem;
+    }
+}
+
+/* height */
+@media (max-height: 1070px) {
+    .js-toDoList {
+        height: calc(50% - 38px);
+    }
+}
+
+@media (max-height: 800px) {
+    .js-toDoList {
+        height: calc(30% - 38px);
+    }
+}
+
+@media (max-height: 756px) {
+    .js-toDoList {
+        height: calc(40% - 38px);
+    }
+}
+
+@media (max-height: 576px) {
+    .js-toDoList {
+        height: calc(30% - 38px);
     }
 }
