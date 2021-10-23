@@ -34,8 +34,8 @@
 }
 
 .bg_icons img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .bg_icons li:nth-child(1) {
@@ -353,7 +353,7 @@ body.dark .del_btn {
 
 /* || media query */
 /* width */
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
     main {
         top: 0px;
         height: calc(100% - 53px);
@@ -369,37 +369,89 @@ body.dark .del_btn {
         font-size: 9rem;
     }
 
+    .form input,
     .showing,
     .js-weather {
         font-size: 3rem;
     }
 
+    .bg_icons li {
+        height: auto !important;
+    }
+
     .bg_icons li:nth-child(1) {
         width: 75.8965%;
-        height: 58.1406%;
+        /* height: 58.1406%; */
+        top: -23.4028vw;
     }
 
     .bg_icons li:nth-child(2) {
         width: 102.7832%;
-        height: 67.7031%;
+        /* height: 67.7031%; */
     }
 
     .bg_icons li:nth-child(3) {
         width: 47.0850%;
-        height: 49.5352%;    
+        /* height: 49.5352%;     */
+        left: -15.9000vw;
     }
 
     .bg_icons li:nth-child(4) {
         width: 53.7529%;
-        height: 43.1963%;
+        /* height: 43.1963%; */
         left: 71.8691vw;
     }
 }
+
+@media (max-width: 767px) {
+    .js-clock {
+        font-size: 7.2rem;
+    }
+    
+    .form input,
+    .showing,
+    .js-weather {
+        font-size: 2.2rem;
+    }
+
+    .form,
+    .js-toDoForm,
+    .js-toDoList {
+        width: 80%;
+    }
+
+    .privacy_info {
+        font-size: 1.55rem;
+    }
+
+    .js-toDoForm input,
+    .js-toDoList li span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer address {
+        font-size: 2rem;
+    }
+
+    .privacy_info {
+        font-size: 1.3rem;
+        margin: 0 10px;
+    }
+}
+
 
 /* height */
 @media (max-height: 1070px) {
     .js-toDoList {
         height: calc(50% - 38px);
+    }
+}
+
+@media (max-height: 900px) {
+    .js-toDoList {
+        height: calc(40% - 38px);
     }
 }
 
@@ -415,7 +467,7 @@ body.dark .del_btn {
     }
 }
 
-@media (max-height: 576px) {
+@media (max-height: 720px) {
     .js-toDoList {
         height: calc(30% - 38px);
     }
