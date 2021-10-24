@@ -217,7 +217,7 @@ main {
 
 .del_btn {
     border: none;
-    background: url(../img/icon_recycleBin_close.svg);
+    background: url(../img/icon_recycleBin_close.svg) no-repeat center center / contain;
     width: 23px;
     height: 31.43px;
     cursor: pointer;
@@ -246,7 +246,7 @@ main {
 }
 
 .darkMode_btn > i {
-    background: url(../img/icon_darkMode.svg) no-repeat center center;
+    background: url(../img/icon_darkMode.svg) no-repeat center center / contain;
     display: block;
     width: 28px;
     height: 41px;
@@ -262,7 +262,7 @@ main {
     display: block;
     width: 23px;
     height: 31.43px;
-    background: url(../img/icon_recycleBin_close.svg) no-repeat center center;
+    background: url(../img/icon_recycleBin_close.svg) no-repeat center center / contain;
 }
 
 /* || footer */
@@ -333,11 +333,11 @@ body.dark .js-toDoForm {
 }
 
 body.dark .x_btn {
-    background: url(../img/darkBtn_x.svg);
+    background: url(../img/darkBtn_x.svg) no-repeat center center / contain;
 }
 
 body.dark .del_btn {
-    background: url(../img/darkIcon_recycleBin_close.svg);
+    background: url(../img/darkIcon_recycleBin_close.svg) no-repeat center center / contain;
 }
 
 @keyframes marquee {
@@ -438,6 +438,74 @@ body.dark .del_btn {
     .privacy_info {
         font-size: 1.3rem;
         margin: 0 10px;
+    }
+
+    .js-clock {
+        font-size: 5rem;
+        padding-bottom: 20px;
+    }
+
+    .js-toDoForm input {
+        padding: 25px 0px 13px;
+    }
+
+    .x_btn {
+        margin-bottom: 13px;
+    }
+
+
+    .form input,
+    .showing,
+    .js-weather {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        padding-bottom: 0px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 368px) {
+    .darkMode_btn,
+    .recycleBin_btn {
+        width: 40px;
+        height: 40px;
+        bottom: 45px;
+    }
+
+    .form input,
+    .showing,
+    .js-weather {
+        font-size: 1.6rem;
+    }
+
+    .js-toDoForm input,
+    .js-toDoList li span {
+        font-size: 1.5rem;
+    }
+
+    .del_btn {
+        width: 20px;
+        height: 27.43px;
+    }
+
+    .darkMode_btn {
+        left: 10px;
+    }
+
+    .darkMode_btn > i {
+        width: 17px;
+        height: 30px;
+    }
+
+    .recycleBin_btn {
+        right: 10px;
+    }
+
+    .recycleBin_btn > i {
+        width: 20px;
+        height: 28.43px;
     }
 }
 
