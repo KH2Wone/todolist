@@ -1,12 +1,13 @@
 # todolist TODO-IT
 
-✅ [노마드코더의 바닐라 JS로 크롬 앱 만들기](https://nomadcoders.co/javascript-for-beginners)를 공부하면서 추가로 응용해서 만들었어요!<br><br>
-누구나 손쉽게 이용할 수 있는 TODO-LIST ! 💨 <br><br>
+[🌈 사이트로 이동 🌈](https://kh2wone.github.io/todolist/index.html)
+<br><br>
+
+누구나 손쉽게 이용할 수 있는 TODO-LIST 🛍 <br><br>
 
 <img src="./img/readmeImg_01.jpg">
 <img src="./img/readmeImg_02.jpg">
 
----
 <br>
 
 ## What kind of function is it?
@@ -16,3 +17,8 @@
 - 사용자의 위치를 파악해 위치와 날씨를 알려줘요.<br>
 - 일반모드 & 다크모드의 콜라보!<br>
 - 반응형으로 제작했어요.<br>
+
+<br>
+<br>
+
+[📝 노마드코더의 바닐라 JS로 크롬 앱 만들기](https://nomadcoders.co/javascript-for-beginners)를 공부하면서 추가로 응용해서 만들었어요!<br><br>
